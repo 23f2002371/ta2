@@ -1,0 +1,9 @@
+__pycache__/
+venv/
+.venv/
+scrape_course.py
+scrape_discourse.py
+.env
+preprocess.py
+*.pyc
+.DS_Store
