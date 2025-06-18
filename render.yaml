@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: my-fastapi-app
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host=0.0.0.0 --port=10000
+    envVars:
+      - key: AIPROXY_KEY
+        value: eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IjIzZjIwMDIzNzFAZHMuc3R1ZHkuaWl0bS5hYy5pbiJ9.qsMjKNzq5gzdrfTP3V-aP7f19GifDfsCs7bJxblpR5g
+      - key: AIPROXY_URL
+        value: https://aiproxy.sanand.workers.dev/openai
